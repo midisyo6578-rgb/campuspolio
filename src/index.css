@@ -1,0 +1,162 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --font-sans: 'Pretendard Variable', 'Pretendard', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #E7F3EC;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Editorial Markdown Prose */
+.editorial-prose h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0F172A;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.editorial-prose h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0F172A;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.editorial-prose h3 {
+  font-size: 1.025rem;
+  font-weight: 600;
+  color: #1E293B;
+  margin-top: 1rem;
+  margin-bottom: 0.375rem;
+}
+
+.editorial-prose p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 0.75rem;
+}
+
+.editorial-prose ul, .editorial-prose ol {
+  margin-bottom: 0.875rem;
+  padding-left: 1.25rem;
+  color: #334155;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.editorial-prose ul {
+  list-style-type: disc;
+}
+
+.editorial-prose ol {
+  list-style-type: decimal;
+}
+
+.editorial-prose li {
+  margin-bottom: 0.25rem;
+}
+
+.editorial-prose blockquote {
+  margin: 0.875rem 0;
+  padding: 0.75rem 1rem;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.editorial-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  background-color: #F1F5F9;
+  color: #4338CA;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+}
+
+.editorial-prose pre {
+  margin: 0.875rem 0;
+  padding: 1rem;
+  background-color: #0F172A;
+  color: #F8FAFC;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.editorial-prose pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.editorial-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.editorial-prose th, .editorial-prose td {
+  border: 1px solid #E2E8F0;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.editorial-prose th {
+  background-color: #F8FAFC;
+  font-weight: 600;
+  color: #0F172A;
+}
+
+.editorial-prose .katex-display {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

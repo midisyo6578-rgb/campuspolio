@@ -1,0 +1,6 @@
+{
+  "name": "캠퍼스폴리오 (CampusFolio)",
+  "description": "전공 학습부터 시간표, 과제·프로젝트, 자료 아카이빙, 성적 관리까지 대학 생활의 모든 흐름을 통합 관리하는 올인원 워크스페이스",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
